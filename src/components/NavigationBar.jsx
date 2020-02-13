@@ -11,7 +11,8 @@ const logo = {
    
    const mainNav = {
      
-     position: 'relative',
+     
+     position: 'initial',
      textDecoration: 'none',
      listStyleType: 'none',
      margin: '0',
@@ -26,7 +27,10 @@ const logo = {
    paddingTop: '0px',
    paddingBottom: '0px',
    textDecoration: 'none',
+   position:'static',
+    margin: '0',
    float: 'right',
+   
   //  color: 'white'
    }
 
