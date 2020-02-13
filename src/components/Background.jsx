@@ -1,11 +1,12 @@
 import React from 'react';
 
+
 function Background(){
     return (
         <div>
-            <p>This is the front page</p>
+            <p></p>
         </div>
     );    
 }
 
-export default BackGround;
+export default Background;
