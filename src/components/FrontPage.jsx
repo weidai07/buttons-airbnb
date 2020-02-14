@@ -1,7 +1,6 @@
 import React from 'react';
-import CheckIn from './CheckIn';
 import NavigationBar from './NavigationBar';
-import background from '../image/background.jpg';
+import CheckIn from './CheckIn'
 
 // const SomeCSS={
 //     margin:'0px',
@@ -41,7 +40,6 @@ function FrontPage(){
     return (
         <div style={backgroundStyle}>
             <NavigationBar></NavigationBar>   
-           
             <CheckIn></CheckIn>
         </div>
     );    

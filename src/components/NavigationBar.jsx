@@ -31,7 +31,7 @@ const logo = {
     margin: '0',
    float: 'right',
    
-  //  color: 'white'
+   color: 'white'
    }
 
 function NavigationBar(){
