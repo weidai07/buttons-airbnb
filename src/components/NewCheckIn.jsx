@@ -44,6 +44,23 @@ const useStyles = makeStyles({
   },
 });
 
+const backgroundStyle = {
+    backgroundPosition: 'center center',
+    height: '100vh',
+      
+    display: 'inlineBlock',
+    zIndex: '-1',
+    width: '100%',
+    // paddingTop: '15%',
+      
+    backgroundRepeat: 'no-repeat',
+    backgroundSize:'cover',
+    flex: 1,
+    resizeMode: 'cover',
+    backgroundImage: 'url(' + 'https://a0.muscache.com/4ea/air/r:w3100-h2074-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg' + ')'
+     
+  };
+
 function NewCheckIn(props){
   let _where = null;
   let _checkIn = null;
@@ -66,35 +83,35 @@ function NewCheckIn(props){
   const classes = useStyles();
 
   return (
-    <div style={moveCard}>
-    <NavigationBar /> 
-      <Card className={classes.root} variant="outlined">
-        <CardContent>
-          <form onSubmit={handleNewCheckIn}>
-            <h3>Book unique places to stay and things to do.</h3>
-            <input type='text' id='where' placeholder='Where to check in' ref={(input) => {_where = input;}}/>
-            {/* <TextField id="filled-basic" label="Where" variant="filled" ref={(input) => {_where = input;}} /> */}
-            <br/><br/>
-            <h5>Check-In</h5>
-            <input type='text' id='checkIn' placeholder='checkIn to check in' ref={(input) => {_checkIn = input;}}/>
-            {/* <TextField id="filled-basic" label="mm/dd/yyyy" variant="filled" ref={(input) => {_checkIn = input;}}/> */}
-            <br/>
-            <h5>Check-out</h5>
-            <input type='text' id='checkOut' placeholder='checkOut to check in' ref={(input) => {_checkOut = input;}}/>
-            {/* <TextField id="filled-basic" label="mm/dd/yyyy" variant="filled" ref={(input) => {_checkOut = input;}} /> */}
-            <br/>
-            <h5>Guests</h5>
-            <input type='text' id='guests' placeholder='guests to check in' ref={(input) => {_guests = input;}}/>
-            {/* <TextField id="outlined-basic" label="Guests" variant="filled"ref={(input) => {_guests = input;}}/> */}
-            <button type='submit'>Submit</button>
-          </form> 
-        </CardContent>
-        <CardActions>
-          {/* <Button   variant="contained" size="medium" color="secondary">Submit</Button> */}
-        </CardActions>
-      </Card>
- 
-   
+    <div style={backgroundStyle}>
+        <div style={moveCard}>
+        <NavigationBar /> 
+        <Card className={classes.root} variant="outlined">
+            <CardContent>
+            <form onSubmit={handleNewCheckIn}>
+                <h3>Book unique places to stay and things to do.</h3>
+                <input type='text' id='where' placeholder='Where to check in' ref={(input) => {_where = input;}}/>
+                {/* <TextField id="filled-basic" label="Where" variant="filled" ref={(input) => {_where = input;}} /> */}
+                <br/><br/>
+                <h5>Check-In</h5>
+                <input type='text' id='checkIn' placeholder='checkIn to check in' ref={(input) => {_checkIn = input;}}/>
+                {/* <TextField id="filled-basic" label="mm/dd/yyyy" variant="filled" ref={(input) => {_checkIn = input;}}/> */}
+                <br/>
+                <h5>Check-out</h5>
+                <input type='text' id='checkOut' placeholder='checkOut to check in' ref={(input) => {_checkOut = input;}}/>
+                {/* <TextField id="filled-basic" label="mm/dd/yyyy" variant="filled" ref={(input) => {_checkOut = input;}} /> */}
+                <br/>
+                <h5>Guests</h5>
+                <input type='text' id='guests' placeholder='guests to check in' ref={(input) => {_guests = input;}}/>
+                {/* <TextField id="outlined-basic" label="Guests" variant="filled"ref={(input) => {_guests = input;}}/> */}
+                <button type='submit'>Submit</button>
+            </form> 
+            </CardContent>
+            <CardActions>
+            {/* <Button   variant="contained" size="medium" color="secondary">Submit</Button> */}
+            </CardActions>
+        </Card>
+        </div>
     </div>
   );
 }
