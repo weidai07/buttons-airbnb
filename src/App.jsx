@@ -6,7 +6,7 @@ import FrontPage from './components/FrontPage';
 // import CheckIn from './components/CheckIn';
 //import NewCheckIn from './components/NewCheckIn';
 import NewCheckInClass from './components/CheckInProp';
-import NavigationBar from './components/Navigationbar'
+import NavigationBar from './components/Navigationbar';
 
 class App extends React.Component {
 
@@ -31,7 +31,7 @@ class App extends React.Component {
       <div className="App">
     
         {/* <FrontPage/> */}
-        <NavigationBar/>
+        {/* <NavigationBar/> */}
         <Switch>
         <Route exact path='/' component={FrontPage} />
 

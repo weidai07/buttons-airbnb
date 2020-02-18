@@ -1,10 +1,12 @@
 import React from 'react';
 import CheckIn from './CheckIn';
 import PropTypes from 'prop-types';
+import NavigationBar from './Navigationbar';
 
 function ConfirmationPage(props){
   return(
     <div>
+        <NavigationBar />
       <p>These are the confirmed check-ins</p>
       {props.confirmationPage.map((checkIn) => 
         <CheckIn where={checkIn.where}

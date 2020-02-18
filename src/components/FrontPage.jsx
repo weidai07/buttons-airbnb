@@ -24,7 +24,7 @@ const backgroundStyle = {
 function FrontPage(){
   return (
     <div style={backgroundStyle}>
-      {/* <NavigationBar></NavigationBar>    */}
+      <NavigationBar />   
       {/* <CheckIn></CheckIn> */}
     </div>
   );    

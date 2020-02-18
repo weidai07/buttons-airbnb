@@ -2,6 +2,7 @@ import React from 'react';
 import CheckInRequest from './CheckInRequest';
 import NewCheckIn from './NewCheckIn';
 import PropTypes from 'prop-types';
+import NavigationBar from './Navigationbar';
 
 class NewCheckInClass extends React.Component{
     
@@ -26,6 +27,7 @@ class NewCheckInClass extends React.Component{
     }
     return (
       <div>
+          {/* <NavigationBar /> */}
         {currentlyVisibleContent}
       </div>
     );

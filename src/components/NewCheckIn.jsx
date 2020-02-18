@@ -8,6 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
+import NavigationBar from './Navigationbar';
 
 const moveCard = {
   paddingLeft:'300px'
@@ -66,6 +67,7 @@ function NewCheckIn(props){
 
   return (
     <div style={moveCard}>
+    <NavigationBar /> 
       <Card className={classes.root} variant="outlined">
         <CardContent>
           <form onSubmit={handleNewCheckIn}>
