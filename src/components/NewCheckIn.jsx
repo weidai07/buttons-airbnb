@@ -109,7 +109,7 @@ function NewCheckIn(props){
             </CardContent>
             <CardActions>
             {/* <Button   variant="contained" size="medium" color="secondary">Submit</Button> */}
-            </CardActions>
+            </CardActions> 
         </Card>
         </div>
     </div>
